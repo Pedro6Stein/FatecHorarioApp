@@ -1,0 +1,554 @@
+{
+  "shifts": [
+    {
+      "name": "Noturno",
+      "courses": [
+        {
+          "name": "Gestão de Tecnologia da Informação",
+          "semesters": [
+            {
+              "number": 1,
+              "days": [
+                {
+                  "day": "Segunda-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Fundamentos de TI",
+                      "professor": "Viviane",
+                      "location": "Lab. REDES"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Matemática Discreta",
+                      "professor": "Leila",
+                      "location": "Sala 1"
+                    }
+                  ]
+                },
+                {
+                  "day": "Terça-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Comunicação e Expressão",
+                      "professor": "Lazaro",
+                      "location": "Sala 10"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Comunicação e Expressão",
+                      "professor": "Lazaro",
+                      "location": "Sala 10"
+                    }
+                  ]
+                },
+                {
+                  "day": "Quarta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Algoritmos",
+                      "professor": "Paulo Leme",
+                      "location": "Lab. O2"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Algoritmos",
+                      "professor": "Paulo Leme",
+                      "location": "Lab. O2"
+                    }
+                  ]
+                },
+                {
+                  "day": "Quinta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Processos Gerenciais",
+                      "professor": "Wander",
+                      "location": "Sala 10"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Processos Gerenciais",
+                      "professor": "Wander",
+                      "location": "Sala 10"
+                    }
+                  ]
+                },
+                {
+                  "day": "Sexta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Matemática Discreta",
+                      "professor": "Leila",
+                      "location": "Sala 1"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Inglês I",
+                      "professor": "Daniel",
+                      "location": "Sala 10"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "days": [
+                {
+                  "day": "Segunda-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Linguagem de Programação",
+                      "professor": "Paulo Leme",
+                      "location": "Lab. O1"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Linguagem de Programação",
+                      "professor": "Paulo Leme",
+                      "location": "Lab. O1"
+                    }
+                  ]
+                },
+                {
+                  "day": "Terça-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Gestão de Sistemas Operacionais",
+                      "professor": "Patrícia Campos",
+                      "location": "Lab. REDES"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Gestão de Sistemas Operacionais",
+                      "professor": "Patrícia Campos",
+                      "location": "Lab. REDES"
+                    }
+                  ]
+                },
+                {
+                  "day": "Quarta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Modelagem de Processos",
+                      "professor": "Elias",
+                      "location": "Sala 12"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Modelagem de Processos",
+                      "professor": "Elias",
+                      "location": "Sala 12"
+                    }
+                  ]
+                },
+                {
+                  "day": "Quinta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Laboratório de Hardware",
+                      "professor": "Clayton",
+                      "location": "Lab. O1"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Inglês II",
+                      "professor": "Ana Lúcia",
+                      "location": "Lab. O1"
+                    }
+                  ]
+                },
+                {
+                  "day": "Sexta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Metodologia da Pesquisa Científico-Tecnológica",
+                      "professor": "Não especificado",
+                      "location": "Sala 10"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Matemática Financeira",
+                      "professor": "Leila",
+                      "location": "Sala 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "days": [
+                {
+                  "day": "Segunda-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Contabilidade",
+                      "professor": "Heraldo",
+                      "location": "Sala 13"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Inglês III",
+                      "professor": "Rose",
+                      "location": "Sala 13"
+                    }
+                  ]
+                },
+                {
+                  "day": "Terça-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Estatística",
+                      "professor": "Elias",
+                      "location": "Sala 4"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Gestão Ambiental",
+                      "professor": "Jorge Luiz",
+                      "location": "Sala 4"
+                    }
+                  ]
+                },
+                {
+                  "day": "Quarta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Gestão de Pessoas",
+                      "professor": "Décisa",
+                      "location": "Sala 8"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Gestão de Pessoas",
+                      "professor": "Décisa",
+                      "location": "Sala 8"
+                    }
+                  ]
+                },
+                {
+                  "day": "Quinta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Engenharia de Software",
+                      "professor": "Renato Labbate",
+                      "location": "Lab. REDES"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Engenharia de Software",
+                      "professor": "Renato Labbate",
+                      "location": "Lab. REDES"
+                    }
+                  ]
+                },
+                {
+                  "day": "Sexta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Banco de Dados e Aplicações",
+                      "professor": "Paulo Henrique",
+                      "location": "Lab. O3"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Banco de Dados e Aplicações",
+                      "professor": "Paulo Henrique",
+                      "location": "Lab. O3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "days": [
+                {
+                  "day": "Segunda-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Gestão da Produção",
+                      "professor": "Thiago",
+                      "location": "Sala 6"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Gestão da Produção",
+                      "professor": "Thiago",
+                      "location": "Sala 6"
+                    }
+                  ]
+                },
+                {
+                  "day": "Terça-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Redes de Computadores",
+                      "professor": "Clayton",
+                      "location": "Lab. O3"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Redes de Computadores",
+                      "professor": "Clayton",
+                      "location": "Lab. O3"
+                    }
+                  ]
+                },
+                {
+                  "day": "Quarta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Programação para Internet",
+                      "professor": "Luciano Pelissoli",
+                      "location": "Lab. O3"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Programação para Internet",
+                      "professor": "Luciano Pelissoli",
+                      "location": "Lab. O3"
+                    }
+                  ]
+                },
+                {
+                  "day": "Quinta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Inglês IV",
+                      "professor": "Ana Lúcia",
+                      "location": "Sala 6"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Fundamentos de Marketing",
+                      "professor": "Fassina",
+                      "location": "Sala 6"
+                    }
+                  ]
+                },
+                {
+                  "day": "Sexta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Gestão Financeira",
+                      "professor": "Douglas Ribeiro",
+                      "location": "Sala 11"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Gestão Financeira",
+                      "professor": "Douglas Ribeiro",
+                      "location": "Sala 11"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "days": [
+                {
+                  "day": "Segunda-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Gestão da T.I.",
+                      "professor": "Wladison",
+                      "location": "Lab. O3"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Gestão da T.I.",
+                      "professor": "Wladison",
+                      "location": "Lab. O3"
+                    }
+                  ]
+                },
+                {
+                  "day": "Terça-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Gestão de Projetos",
+                      "professor": "Não especificado",
+                      "location": "Sala 6"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Gestão de Projetos",
+                      "professor": "Não especificado",
+                      "location": "Sala 6"
+                    }
+                  ]
+                },
+                {
+                  "day": "Quarta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Inglês V",
+                      "professor": "Daniel",
+                      "location": "Sala 9"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Projetos de TI I",
+                      "professor": "Carlos Augusto",
+                      "location": "Sala Maker"
+                    }
+                  ]
+                },
+                {
+                  "day": "Quinta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Gestão Estratégica",
+                      "professor": "Décisa",
+                      "location": "Sala 7"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Gestão Estratégica",
+                      "professor": "Décisa",
+                      "location": "Sala 7"
+                    }
+                  ]
+                },
+                {
+                  "day": "Sexta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Sistemas Integrados de Gestão",
+                      "professor": "Não especificado",
+                      "location": "Sala 8A"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Sistemas Integrados de Gestão",
+                      "professor": "Não especificado",
+                      "location": "Sala 8A"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "days": [
+                {
+                  "day": "Segunda-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Gestão Econômica",
+                      "professor": "Fassina",
+                      "location": "Sala 8A"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Gestão Econômica",
+                      "professor": "Fassina",
+                      "location": "Sala 8A"
+                    }
+                  ]
+                },
+                {
+                  "day": "Terça-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Inglês VI",
+                      "professor": "Vera",
+                      "location": "Lab. O1"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Projetos de TI II",
+                      "professor": "Carlos Augusto",
+                      "location": "Lab. O1"
+                    }
+                  ]
+                },
+                {
+                  "day": "Quarta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Tópicos Avançados em Tecnologia da Informação",
+                      "professor": "Renato Labbate",
+                      "location": "Lab. O1"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Tópicos Avançados em Tecnologia da Informação",
+                      "professor": "Anderson",
+                      "location": "Lab. O1"
+                    }
+                  ]
+                },
+                {
+                  "day": "Quinta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Inteligência de Negócios",
+                      "professor": "Alessandro",
+                      "location": "Lab. O3"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Inteligência de Negócios",
+                      "professor": "Alessandro",
+                      "location": "Lab. O3"
+                    }
+                  ]
+                },
+                {
+                  "day": "Sexta-feira",
+                  "classes": [
+                    {
+                      "time": "19:00 - 20:40",
+                      "subject": "Legislação",
+                      "professor": "Anderson Oliveira",
+                      "location": "Sala 3"
+                    },
+                    {
+                      "time": "20:50 - 22:30",
+                      "subject": "Negócios Eletrônicos",
+                      "professor": "Patrícia",
+                      "location": "Lab. REDES"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
