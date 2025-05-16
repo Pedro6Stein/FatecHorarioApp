@@ -1,0 +1,42 @@
+# Resumo de Alterações e Próximos Passos
+
+## Contexto
+
+Hoje trabalhamos na tela **HomeScreen** do app FatecHorário, implementando:
+
+* Layout responsivo 100% com classes Tailwind percentuais (`h-[60%]`, `h-[40%]`).
+* Animação de boas-vindas usando `Animated` e `Easing` do React Native.
+* Separação de código em componentes: `WelcomeHeader` e `ShiftOptions` para clareza e Single Responsibility.
+* Substituição de estilos inline por classes Tailwind para posicionamento (`pt-[20%]`, `-mt-[10%]`, `absolute top-[50%] left-[5%] right-[5%]`).
+* Uso de `BlurView` do `expo-blur` com Tailwind e fundo semitransparente para a lista de turnos.
+
+## Alterações Realizadas
+
+1. **Refactor de HomeScreen**:
+
+   * Extraídos componentes `WelcomeHeader` e `ShiftOptions`.
+   * Ajuste de flex para porcentagem de altura em vez de flex customizado.
+   * Removido `Dimensions` inline para posicionamento absoluto em favor de classes `%`.
+2. **Estilização**:
+
+   * Classes JIT Tailwind para responsividade e espaçamentos percentuais.
+   * Centralização do texto de boas-vindas com `justify-center items-center pt-[20%]`.
+3. **Animação**:
+
+   * Uso de `Animated.parallel` com `scale` e `opacity` e curvas `Easing.inOut`.
+4. **Commit**:
+
+   * Gerado commit descrevendo refactor e ajustes de layout responsivo.
+
+## Próximos Passos
+
+1. **CourseListScreen**: implementar UI dinâmica chamando `getCourses(shiftName)` e renderizar cursos.
+2. **ScheduleScreen**: criar tela para exibir semestres e dias, com `FlatList` aninhadas.
+3. **Navegação**: adicionar rotas ao `AppNavigator` para `CourseList` e `Schedule`.
+4. **Integração futura**: trocar fonte de dados do JSON para API REST ou SAP, atualizando apenas o service.
+5. **Estilização adicional**: aplicar tema de cores da Fatec, dark mode e ícones personalizados.
+6. **Teste e CI**: configurar testes unitários para `gradeService` e snapshots para componentes.
+
+---
+
+*Documento gerado automaticamente em *"+ new Date().toLocaleDateString()+"* para acompanhar o progresso do dia.*
