@@ -16,7 +16,7 @@ export default function HomeScreen() {
         ListHeaderComponent={() => (
           <View className="px-4 py-6">
             <Text className="text-2xl font-bold text-gray-800">
-              Bem-vindo ao Fatec Horário!
+              Bem-vindo ao FatecHorário!
             </Text>
             <Text className="mt-1 text-gray-600">
               Selecione seu turno para ver os cursos disponíveis.
