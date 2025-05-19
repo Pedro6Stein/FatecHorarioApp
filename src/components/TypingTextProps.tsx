@@ -15,19 +15,19 @@ export function TypingText({
   const [displayed, setDisplayed] = useState<string>("");
 
   useEffect(() => {
-    // índice de quantos caracteres já foram mostrados
+     
     let index = 0;
 
-    // antes de tudo, zera a tela
+     
     setDisplayed("");
 
     const interval = setInterval(() => {
       index++;
       if (index <= text.length) {
-        // pega sempre os primeiros `index` caracteres de `text`
+         
         setDisplayed(text.slice(0, index));
       } else {
-        // quando já mostrou toda a palavra, para o intervalo
+         
         clearInterval(interval);
       }
     }, speed);
