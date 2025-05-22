@@ -5,7 +5,7 @@ type HeaderAnimatedProps = {
     subtitle: string;
 }; 
 
-export function HeadAnimated({title, subtitle}: HeaderAnimatedProps) {
+export function HeaderAnimated({title, subtitle}: HeaderAnimatedProps) {
   const scale = useRef(new Animated.Value(0.8)).current;
   const opacity = useRef(new Animated.Value(0)).current;
 
@@ -17,7 +17,7 @@ export function HeadAnimated({title, subtitle}: HeaderAnimatedProps) {
             easing: Easing.inOut(Easing.ease),
             useNativeDriver: true,
         }),
-           Animated.timing(scale, {
+           Animated.timing(opacity, {
             toValue: 1,
             duration: 1200,
             easing: Easing.inOut(Easing.ease),
@@ -27,12 +27,12 @@ export function HeadAnimated({title, subtitle}: HeaderAnimatedProps) {
   },[scale, opacity])
 
   return (
-    <View className="h-[60%] justify-center items-center px-6">
+    <View className="h-[60%] justify-center items-center px-10">
       <Animated.View style={{ transform: [{ scale }], opacity }}>
-        <Text className="text-5xl font-bold text-white text-center">
+        <Text className="text-6xl font-bold text-white text-center">
           {title}
         </Text>
-        <Text className="text-6xl font-bold text-white text-center mt-2">
+        <Text className="text-4xl font-bold text-white text-center mt-4">
           {subtitle}
         </Text>
       </Animated.View>
