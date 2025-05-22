@@ -1,10 +1,47 @@
 import { getCourses } from "~/services/gradeService";
 import { useRoute, useNavigation } from "@react-navigation/native";
-import { View, FlatList, TouchableOpacity, Text } from "react-native";
+import { View, FlatList, TouchableOpacity, Text, Animated, Easing } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import type { Course } from "~/types";
+import { useEffect, useRef } from "react";
 
 
+function WelcomeHeader() {
+  const scale = useRef(new Animated.Value(0.8)).current;
+  const opacity = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    Animated.parallel([
+      Animated.timing(scale, {
+        toValue: 1,
+        duration: 1200,
+        easing: Easing.inOut(Easing.ease),
+        useNativeDriver: true,
+      }),
+      Animated.timing(opacity, {
+        toValue: 1,
+        duration: 1200,
+        easing: Easing.inOut(Easing.ease),
+        useNativeDriver: true,
+      }),
+    ]).start();
+  }, [scale, opacity]);
+
+  return (
+    <View className="h-[60%] justify-center items-center px-6">
+      <Animated.View
+        style={{ transform: [{ scale }], opacity }}
+      >
+        <Text className="text-5xl font-bold text-white text-center">
+          Seu turno é
+        </Text>
+        <Text className="text-6xl font-bold text-white text-center">
+          Noturno
+        </Text>
+      </Animated.View>
+    </View>
+  );
+}
 
 export default function CourseListScreen() {
   const { shiftName } = useRoute().params as { shiftName: string };
