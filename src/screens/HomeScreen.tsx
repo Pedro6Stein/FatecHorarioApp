@@ -4,10 +4,11 @@ import { useNavigation } from "@react-navigation/native";
 import { getShifts } from "~/services/gradeService";
 import { OptionList } from "~/components/OptionList";
 import { HeaderAnimated } from "~/components/HeaderAnimated";
+import { CourseListNavProp } from "~/navigation";
 
 export default function HomeScreen() {
   const shifts = getShifts();
-  const nav = useNavigation<any>();
+  const nav = useNavigation<CourseListNavProp>();
 
   const options = shifts.map((s) => ({
     key: s.name,
