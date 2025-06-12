@@ -1,5 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator, NativeStackNavigationProp } from "@react-navigation/native-stack";
+import ClassListScreen from "~/screens/ClassListScreen";
 import CourseListScreen from "~/screens/CourseListScreen";
 import DayListScreen from "~/screens/DayListScreen";
 import HomeScreen from "~/screens/HomeScreen";
@@ -31,7 +32,7 @@ export default function AppNavigator() {
         <Stack.Screen name="CourseList" component={CourseListScreen} />
         <Stack.Screen name="Schedule" component={ScheduleScreen} />
         <Stack.Screen name="DayList" component={DayListScreen} />
-        {/* <Stack.Screen name="ClassList" component={ClassListScreen} /> */}
+        <Stack.Screen name="ClassList" component={ClassListScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
