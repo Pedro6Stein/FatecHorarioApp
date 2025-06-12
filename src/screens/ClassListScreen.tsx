@@ -22,33 +22,36 @@ export default function ClassListScreen() {
   );
 
   return (
-    <SafeAreaView className="flex-1 bg-blue-800">
-      <HeaderAnimated
-        title={dayName}
-        subtitle={`Semestre ${semesterNumber}`}
-      />
+    
+      <SafeAreaView className="flex-1 bg-blue-800">
+        <HeaderAnimated
+          title={dayName}
+          subtitle={`Semestre ${semesterNumber}`}
+        />
 
-      <FlatList
-        data={classes}
-        keyExtractor={(item) => `${item.time}-${item.subject}`}
-        contentContainerStyle={{ padding: 16 }}
-        renderItem={({ item }) => (
-          <View className="bg-white/20 rounded-2xl p-4 mb-4">
-            <Text className="text-lg font-semibold text-white">
-              {item.time}
-            </Text>
-            <Text className="text-2xl font-bold text-white mt-1">
-              {item.subject}
-            </Text>
-            <Text className="text-base text-white mt-1">
-              Prof. {item.professor}
-            </Text>
-            <Text className="text-sm text-white mt-1">
-              {item.location}
-            </Text>
-          </View>
-        )}
-      />
-    </SafeAreaView>
+        <FlatList
+          data={classes}
+          keyExtractor={(item) => `${item.time}-${item.subject}`}
+
+          contentContainerStyle={{ padding: 16 }}
+          renderItem={({ item }) => (
+            <View className="bg-white/20 rounded-2xl p-4 mb-4">
+              <Text className="text-lg font-semibold text-white">
+                {item.time}
+              </Text>
+              <Text className="text-2xl font-bold text-white mt-1">
+                {item.subject}
+              </Text>
+              <Text className="text-base text-white mt-1">
+                Prof. {item.professor}
+              </Text>
+              <Text className="text-sm text-white mt-1">
+                {item.location}
+              </Text>
+            </View>
+          )}
+        />
+      </SafeAreaView>
+  
   );
 }
