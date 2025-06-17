@@ -1,0 +1,130 @@
+# Documentação da Estrutura do Projeto FatecHorario
+
+Este documento descreve a arquitetura, camadas e fluxo de dados do aplicativo **FatecHorario**, incluindo detalhes sobre cada módulo e como eles se interconectam.
+
+---
+
+## 1. Visão Geral
+
+* **Objetivo:** Exibir grades horárias de forma responsiva e performática.
+* **Tecnologias:** React Native (Expo), TypeScript, NativeWind (Tailwind CSS), React Navigation.
+* **Fonte de dados inicial:** JSON local (`data.json`).
+
+---
+
+## 2. Camada de Dados
+
+* Arquivo: `data.json`.
+* Estrutura principal:
+
+  ```json
+  {
+    "shifts": [
+      { "name": "Matutino", "courses": [...] },
+      { "name": "Noturno",  "courses": [...] }
+    ]
+  }
+  ```
+* Representa toda a hierarquia: turnos → cursos → semestres → dias → aulas.
+
+---
+
+## 3. Service Layer (`gradeService.ts`)
+
+Expõe funções puras que isolam o JSON do restante da aplicação:
+
+| Função                                                       | Retorna       |
+| ------------------------------------------------------------ | ------------- |
+| `getShifts()`                                                | `Shift[]`     |
+| `getCourses(shiftName)`                                      | `Course[]`    |
+| `getSemesters(shiftName, courseName)`                        | `Semester[]`  |
+| `getDays(shiftName, courseName, semesterNumber)`             | `Day[]`       |
+| `getClasses(shiftName, courseName, semesterNumber, dayName)` | `ClassItem[]` |
+
+**Responsabilidades:**
+
+* Buscar dados no JSON.
+* Retornar arrays vazios se não encontrar correspondência.
+* Seguir SRP e Law of Demeter.
+
+---
+
+## 4. Camada de Apresentação
+
+### 4.1 Componentes Genéricos (`src/components`)
+
+* **`HeaderAnimated.tsx`**: cabeçalho com animação de scale e fade-in.
+* **`OptionList.tsx`**: lista de opções dentro de `BlurView`, usada em várias telas.
+
+### 4.2 Telas (`src/screens`)
+
+Cada tela consome um getter do service e renderiza UI:
+
+| Tela                 | Getter usado                                                 | Renderização               |
+| -------------------- | ------------------------------------------------------------ | -------------------------- |
+| **HomeScreen**       | `getShifts()`                                                | `OptionList` (turnos)      |
+| **CourseListScreen** | `getCourses(shiftName)`                                      | `OptionList` (cursos)      |
+| **ScheduleScreen**   | `getSemesters(shiftName, courseName)`                        | `OptionList` (semestres)   |
+| **DayListScreen**    | `getDays(shiftName, courseName, semesterNumber)`             | `OptionList` (dias)        |
+| **ClassListScreen**  | `getClasses(shiftName, courseName, semesterNumber, dayName)` | `FlatList` (cards de aula) |
+
+**Pontos-chave:**
+
+* Uso de `useRoute<RouteProp<...>>()` para params tipados.
+* Estilização rápida via Tailwind/Nativ e `className`.
+* `HeaderAnimated` em todas as telas.
+
+---
+
+## 5. Navegação (`AppNavigator.tsx`)
+
+Define o stack tipado:
+
+```ts
+export type RootStackParamList = {
+  Home: undefined;
+  CourseList: { shiftName: string };
+  Schedule: { shiftName: string; courseName: string };
+  DayList: { shiftName: string; courseName: string; semesterNumber: number };
+  ClassList: { shiftName: string; courseName: string; semesterNumber: number; dayName: string };
+};
+```
+
+* `createNativeStackNavigator<RootStackParamList>()`.
+* Todas as rotas com `headerShown: false`.
+
+---
+
+## 6. Fluxo de Execução
+
+1. **HomeScreen**: lista turnos → seleciona e navega para
+2. **CourseListScreen**: lista cursos → seleciona e navega para
+3. **ScheduleScreen**: lista semestres → seleciona e navega para
+4. **DayListScreen**: lista dias → seleciona e navega para
+5. **ClassListScreen**: lista aulas do dia
+
+---
+
+## 7. Próximos Passos
+
+* **Dark Mode:** implementar via Context API + Tailwind condicional.
+* **Notificações:** lembretes de início de aula (`expo-notifications`).
+* **Calendário:** exportar eventos de aula (`react-native-calendar-events`).
+* **API REST:** substituir `data.json` por chamadas a endpoint.
+* **Testes:** Jest para service/componentes e Detox para E2E.
+* **CI/CD:** GitHub Actions para lint, testes e deploy.
+
+---
+
+## 8. Tecnologias Utilizadas
+
+* **Framework:** React Native (Expo)
+* **Linguagem:** TypeScript
+* **Estilos:** NativeWind (Tailwind CSS)
+* **Navegação:** React Navigation (Native Stack)
+* **Animações:** Animated API (React Native)
+* **Dados:** JSON local (futuro: REST)
+
+---
+
+*Documento gerado para servir de referência e onboarding de novos desenvolvedores.*
