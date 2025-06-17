@@ -22,20 +22,28 @@ export default function ClassListScreen() {
   );
 
   return (
-    
-      <SafeAreaView className="flex-1 bg-blue-800">
+    <SafeAreaView className="flex-1 bg-blue-800">
+
+      <View className="absolute top-0 inset-x-0 h-[60%] z-10">
         <HeaderAnimated
           title={dayName}
           subtitle={`Semestre ${semesterNumber}`}
         />
+      </View>
 
+      {/* Container principal com flex e centralização */}
+      <View className="flex-1 justify-center">
         <FlatList
           data={classes}
           keyExtractor={(item) => `${item.time}-${item.subject}`}
-
-          contentContainerStyle={{ padding: 16 }}
+          contentContainerStyle={{
+            paddingHorizontal: 16,
+            paddingVertical: 8,
+            flexGrow: 1,
+            justifyContent: 'center'
+          }}
           renderItem={({ item }) => (
-            <View className="bg-white/20 rounded-2xl p-4 mb-4">
+            <View className="bg-white/20 rounded-2xl p-4 mb-4 mx-4">
               <Text className="text-lg font-semibold text-white">
                 {item.time}
               </Text>
@@ -50,8 +58,13 @@ export default function ClassListScreen() {
               </Text>
             </View>
           )}
+          ListEmptyComponent={
+            <View className="flex-1 justify-center items-center">
+              <Text className="text-white text-lg">Nenhuma aula encontrada</Text>
+            </View>
+          }
         />
-      </SafeAreaView>
-  
+      </View>
+    </SafeAreaView>
   );
 }
