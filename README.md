@@ -16,9 +16,11 @@ Cansado de abrir PDFs enormes para conferir sua grade, este app fornece ao estud
 ## 📸 Demonstração
 
 <div style="display: flex; overflow-x: auto; gap: 16px; padding: 16px 0;">
-  <img src="./assets/exemplo1.png" width="200" alt="Tela 1 - Seleção de Semestre">
-  <img src="./assets/exemplo2.png" width="200" alt="Tela 2 - Grade de Horários">
-  <img src="./assets/exemplo3.png" width="200" alt="Tela 3 - Detalhes da Disciplina">
+  <img src="./assets/exemplo1.jpg" width="200" alt="Tela 1 - Seleção de Turno">
+  <img src="./assets/exemplo2.jpg" width="200" alt="Tela 2 - Seleção de Curso">
+  <img src="./assets/exemplo3.jpg" width="200" alt="Tela 3 - Seleção de Semestres">
+  <img src="./assets/exemplo4.jpg" width="200" alt="Tela 4 - Seleção do dia da Semana">
+  <img src="./assets/exemplo5.jpg" width="200" alt="Tela 5 - Detalhes de Aula">
 </div>
 
 
