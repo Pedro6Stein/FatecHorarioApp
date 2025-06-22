@@ -13,6 +13,15 @@ Cansado de abrir PDFs enormes para conferir sua grade, este app fornece ao estud
 
 ---
 
+## 📸 Demonstração
+
+<div style="display: flex; overflow-x: auto; gap: 16px; padding: 16px 0;">
+  <img src="./assets/exemplo1.png" width="200" alt="Tela 1 - Seleção de Semestre">
+  <img src="./assets/exemplo2.png" width="200" alt="Tela 2 - Grade de Horários">
+  <img src="./assets/exemplo3.png" width="200" alt="Tela 3 - Detalhes da Disciplina">
+</div>
+
+
 ## 🚀 Tech Stack
 
 - **Plataforma:** Expo SDK 53  
